@@ -1,4 +1,4 @@
-package com.kaisar.walk.goservices;
+package com.kaisar.walkCycelServices;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

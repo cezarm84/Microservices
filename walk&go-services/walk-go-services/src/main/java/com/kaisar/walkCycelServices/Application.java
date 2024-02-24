@@ -1,4 +1,4 @@
-package com.kaisar.walk.goservices;
+package com.kaisar.walkCycelServices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
