@@ -4,7 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/group-transport-services/group-transport-services" />
     <file type="web" url="file://$PROJECT_DIR$/kommunal-transport-services/kommunal-transport-services" />
-    <file type="web" url="file://$PROJECT_DIR$/walk&amp;go-services/walk-go-services" />
+    <file type="web" url="file://$PROJECT_DIR$/walk&amp;cycel-services/walk&amp;cycel-services" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
