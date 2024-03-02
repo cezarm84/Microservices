@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/GoogleeAPI" />
     <file type="web" url="file://$PROJECT_DIR$/group-transport-services/group-transport-services" />
     <file type="web" url="file://$PROJECT_DIR$/kommunal-transport-services/kommunal-transport-services" />
-    <file type="web" url="file://$PROJECT_DIR$/walk&amp;cycel-services/walk&amp;cycel-services" />
+    <file type="web" url="file://$PROJECT_DIR$/SingelTransport/Weather" />
+    <file type="web" url="file://$PROJECT_DIR$/walk&amp;go-services/walk-go-services" />
+    <file type="web" url="file://$PROJECT_DIR$/walk-cycel" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/SingelTransport/pom.xml" />
+        <option value="$PROJECT_DIR$/SingelTransport/KommunalTransport/pom.xml" />
+        <option value="$PROJECT_DIR$/GroupTransport/pom.xml" />
+        <option value="$PROJECT_DIR$/SingelTransport/GoogleAPI/pom.xml" />
+        <option value="$PROJECT_DIR$/Weather/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SingelTransport/KommunalTransport/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
