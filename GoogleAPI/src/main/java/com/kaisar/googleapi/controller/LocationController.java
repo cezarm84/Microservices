@@ -8,12 +8,23 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-public class Geocoder {
+public class LocationController {
     @Value("${API_KEY}")
-    private String API_KEY ;
+    private String API_KEY;
+
+    /* @GetMapping("/test")
+    public String test(){
+        return "test";
+    }*/
+
     @GetMapping("/locations")
-    public Response getTripDetails(){
-        ResponseEntity<Response> response = new RestTemplate().getForEntity("https://maps.googleapis.com/maps/api/directions/json?origin=Chicago&destination=LosAngeles&key=API_KEY", Response.class);
+    public Response getTripDetails() {
+        ResponseEntity<Response> response = new RestTemplate().getForEntity(
+                "https://maps.googleapis.com/maps/api/directions/json?origin=landvetter&destination=stockholm&key="+API_KEY,
+                Response.class);
         return response.getBody();
     }
 }
+
+
+            

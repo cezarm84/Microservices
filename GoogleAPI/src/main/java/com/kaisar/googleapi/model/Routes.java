@@ -1,7 +1,15 @@
 package com.kaisar.googleapi.model;
 
-public class GeocodedWaypoints {
-    private String address;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+
+public class Routes {
+
+  private Legs[] legs;
 
 
 }

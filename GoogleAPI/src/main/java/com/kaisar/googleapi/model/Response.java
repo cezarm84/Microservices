@@ -1,2 +1,14 @@
-package com.kaisar.googleapi.model;public class Response {
+package com.kaisar.googleapi.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Response {
+
+    private Routes[] routes;
+
+
 }
