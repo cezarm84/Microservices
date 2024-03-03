@@ -1,4 +1,4 @@
-package com.kaisar.uppgift.config;
+/*package com.kaisar.uppgift.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,4 +24,4 @@ public class SecurityConfig {
                 .build();
     }
 
-}
+}*/

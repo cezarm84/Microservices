@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class Response {
+public class ResponseWeather {
     @JsonProperty("coord")
     private Coordinates coordinates;
     private  Weather[] weather;
