@@ -1,6 +1,6 @@
 package com.kaisar.weatherapi.config;
 
-import org.springframework.context.annotation.Bean;
+/*import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -16,7 +16,7 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests(auth -> {
-                    auth.requestMatchers("/getWeather/lat={lat}&lon={lon}").permitAll();
+                    auth.requestMatchers("/getWeather").permitAll();
                     auth.anyRequest().authenticated();
                 })
                 .oauth2Login(withDefaults())
@@ -24,4 +24,4 @@ public class SecurityConfig {
                 .build();
     }
 
-}
+}*/
