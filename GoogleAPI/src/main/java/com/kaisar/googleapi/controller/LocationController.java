@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -24,7 +25,7 @@ public class LocationController {
         this.restTemplate = restTemplate;
     }
 
-    @GetMapping("/locations")
+    /*@GetMapping("/locations")// for test
     public Response getTripDetails() {
         try {
             ResponseEntity<Response> response = restTemplate.getForEntity(
@@ -41,6 +42,26 @@ public class LocationController {
         } catch (Exception e) {
             logger.error("Error while making API request", e);
             // Handle exception appropriately or return a default response
+            return new Response();
+        }
+    }*/
+    @GetMapping("/locations")
+    public Response getTripDetails(@RequestParam("startAddress") String startAddress,
+                                   @RequestParam("endAddress") String endAddress) {
+        try {
+            String apiUrl = "https://maps.googleapis.com/maps/api/directions/json?origin=" +
+                    startAddress + "&destination=" + endAddress + "&key=" + apiKey;
+
+            ResponseEntity<Response> response = restTemplate.getForEntity(apiUrl, Response.class);
+
+            if (response.getStatusCode().is2xxSuccessful()) {
+                return response.getBody();
+            } else {
+                logger.error("Error in API response: {}", response.getStatusCode());
+                return new Response();
+            }
+        } catch (Exception e) {
+            logger.error("Error while making API request", e);
             return new Response();
         }
     }
