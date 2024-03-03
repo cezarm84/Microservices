@@ -1,0 +1,6 @@
+hej! jag har gjort denna uppgiften ensam, eftersom all har fått sina grupp, de var 3 st i varje grupp, när du har delat uppgiften med classen jag varit inte med och när jag hade kontakt med andra , de har redan börjat.
+uppgiften till JDBC fått jag K men har inte fått DM från dig.
+planen på denna uppgiften att skriva start och end address , då skickas de till google direction api att få alla info och överfära lat and lng  vidare till openweather api för att få vädret info för resan och sen samla alltinf på en object
+till resa och jobba vidare med alla krav, men har inte hunnit med allting tillsnu , ska jobba visdare med denna 
+tack för din förståelse
+mvh; Kaisar
